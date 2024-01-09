@@ -29,60 +29,68 @@
 #include <Eigen/Dense>
 
 using ll = int64_t;
- 
-Eigen::Matrix3d crossMatrix(Eigen::Vector3d v)
-{
-	Eigen::Matrix3d result;
-	result << 0, -v[2], v[1],
-		v[2], 0, -v[0],
-		-v[1], v[0], 0;
-	return result;
-}
- 
-void day24()
-{
-	struct Hailstone
-	{
-		Eigen::Vector3d p;
-		Eigen::Vector3d v;
-	};
- 
-	std::vector<Hailstone> hailstones;
+
+class Hailstone{
+
+	public:
+		double sx, sy, sz, vx, vy, vz, a, b, c;
+		Hailstone(double sx, double sy, double sz, double vx, double vy, double vz){
+			this -> sx = sx;
+			this -> sy = sy;
+			this -> sz = sz;
+			this -> vx = vx;
+			this -> vy = vy;
+			this -> vz = vz;
+			this -> a = vy;
+			this -> b = -vx;
+			this -> c = vy * sx - vx * sy;
+		}
+		Hailstone(){
+
+		}
+};
+void day24_1(void){
 	std::ifstream input("input.txt");
 	std::string line;
+	std::vector<Hailstone> hailstones;
+	ll ans = 0;
 	while (getline(input,line)){
 		line.at(line.find('@')) = ',';
 		std::stringstream startPos(line);
 		std::string temp;
 		std::vector<ll> currentHail;
-		Hailstone h;
 		while (getline(startPos, temp, ',')){
 			ll currCoord = std::stoll(temp);
 			currentHail.push_back(currCoord);
+			// std::cout << currCoord << std::endl;
 		}
-		Eigen::Vector3d tempP;
-		Eigen::Vector3d tempV;
-		h.p[0] = currentHail.at(0);
-		h.p[1] = currentHail.at(2);
-		h.p[2] = currentHail.at(2);
-		h.v[0] = currentHail.at(3);
-		h.v[1] = currentHail.at(4);
-		h.v[2] = currentHail.at(5);
-		hailstones.push_back(h);
+		double sx = currentHail.at(0);
+		double sy = currentHail.at(1);
+		double sz = currentHail.at(2);
+		double vx = currentHail.at(3);
+		double vy = currentHail.at(4);
+		double vz = currentHail.at(5);
+		hailstones.push_back(Hailstone(sx, sy, sz, vx, vy, vz));
 	}
-	
-	Eigen::MatrixXd M(6, 6);
-	Eigen::VectorXd rhs(6);
-	rhs.segment<3>(0) = -hailstones[0].p.cross(hailstones[0].v) + hailstones[1].p.cross(hailstones[1].v);
-	rhs.segment<3>(3) = -hailstones[0].p.cross(hailstones[0].v) + hailstones[2].p.cross(hailstones[2].v);
-	M.block<3, 3>(0, 0) = crossMatrix(hailstones[0].v) - crossMatrix(hailstones[1].v);
-	M.block<3, 3>(3, 0) = crossMatrix(hailstones[0].v) - crossMatrix(hailstones[2].v);
-	M.block<3, 3>(0, 3) = -crossMatrix(hailstones[0].p) + crossMatrix(hailstones[1].p);
-	M.block<3, 3>(3, 3) = -crossMatrix(hailstones[0].p) + crossMatrix(hailstones[2].p);
-	Eigen::Vector3d result = M.inverse() * rhs;
-	std::cout << "pos: " << result.segment<3>(0) << " vel: " << result.segment<3>(3) << std::endl;
-	ll sum = 0;
-	for (int i = 0; i < 3; i++)
-		sum += ll(result[i]);
-	std::cout<< "Part 2: " << sum << std::endl;
+	// for (auto x : hailstones){
+	//     std::cout << x.a << ' ' << x.b << ' ' <<x.c << std::endl;
+	// }
+	for (ll i = 0; i < hailstones.size(); ++i){
+		Hailstone h1 = hailstones.at(i);
+		for (ll j = 0;  j < i; ++j){
+			Hailstone h2 = hailstones.at(j);
+			if (h1.a * h2.b == h2.a * h1.b) continue;
+			double x = (h1.c * h2.b - h2.c * h1.b) / (h1.a * h2.b - h2.a * h1.b);
+			double y = -(h1.c * h2.a - h2.c * h1.a) / (h1.a * h2.b - h2.a * h1.b);
+			//std::cout << x << ' ' << y << std::endl;
+			if (x >= 200000000000000 && x <= 400000000000000 && y >= 200000000000000 && y <= 400000000000000 &&
+				(x - h1.sx) * h1.vx >= 0 && (y - h1.sy) * h1.vy >= 0 && (x - h2.sx) * h2.vx >= 0 && (y - h2.sy) * h2.vy >= 0){
+				++ans;
+			}
+		}
+	}
+	std::cout << "Part 1: " << ans << std::endl;
+}
+void day24(void){
+	day24_1();
 }

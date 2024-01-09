@@ -14,6 +14,15 @@
 		5533FF492B4C7ECD00B31363 /* Day04.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5533FF472B4C7ECD00B31363 /* Day04.cpp */; };
 		5533FF4C2B4CA1FC00B31363 /* Day05.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5533FF4A2B4CA1FC00B31363 /* Day05.cpp */; };
 		5533FF4F2B4CA94900B31363 /* Day06.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5533FF4D2B4CA94900B31363 /* Day06.cpp */; };
+		553C1AED2B4D9B1400C86355 /* Day16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 553C1AEB2B4D9B1400C86355 /* Day16.cpp */; };
+		553C1AF02B4DA05900C86355 /* Day17.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 553C1AEE2B4DA05900C86355 /* Day17.cpp */; };
+		553C1AF32B4DA07200C86355 /* Day18.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 553C1AF12B4DA07200C86355 /* Day18.cpp */; };
+		553C1AF62B4DA07900C86355 /* Day19.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 553C1AF42B4DA07900C86355 /* Day19.cpp */; };
+		553C1AF92B4DA07F00C86355 /* Day20.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 553C1AF72B4DA07F00C86355 /* Day20.cpp */; };
+		553C1AFC2B4DA33C00C86355 /* Day21.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 553C1AFA2B4DA33C00C86355 /* Day21.cpp */; };
+		553C1AFF2B4DA50800C86355 /* Day22.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 553C1AFD2B4DA50800C86355 /* Day22.cpp */; };
+		553C1B022B4DA50E00C86355 /* Day23.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 553C1B002B4DA50E00C86355 /* Day23.cpp */; };
+		553C1B052B4DA51600C86355 /* Day25.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 553C1B032B4DA51600C86355 /* Day25.cpp */; };
 		55BEEAD32B4D6C7300E5F781 /* Day11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55BEEAD12B4D6C7300E5F781 /* Day11.cpp */; };
 		55BEEAD62B4D753800E5F781 /* Day12.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55BEEAD42B4D753800E5F781 /* Day12.cpp */; };
 		55D0DA4A2B4C679E00229CD2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55D0DA492B4C679E00229CD2 /* main.cpp */; };
@@ -64,6 +73,24 @@
 		5533FF4B2B4CA1FC00B31363 /* Day05.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day05.hpp; sourceTree = "<group>"; };
 		5533FF4D2B4CA94900B31363 /* Day06.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day06.cpp; sourceTree = "<group>"; };
 		5533FF4E2B4CA94900B31363 /* Day06.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day06.hpp; sourceTree = "<group>"; };
+		553C1AEB2B4D9B1400C86355 /* Day16.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day16.cpp; sourceTree = "<group>"; };
+		553C1AEC2B4D9B1400C86355 /* Day16.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day16.hpp; sourceTree = "<group>"; };
+		553C1AEE2B4DA05900C86355 /* Day17.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day17.cpp; sourceTree = "<group>"; };
+		553C1AEF2B4DA05900C86355 /* Day17.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day17.hpp; sourceTree = "<group>"; };
+		553C1AF12B4DA07200C86355 /* Day18.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day18.cpp; sourceTree = "<group>"; };
+		553C1AF22B4DA07200C86355 /* Day18.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day18.hpp; sourceTree = "<group>"; };
+		553C1AF42B4DA07900C86355 /* Day19.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day19.cpp; sourceTree = "<group>"; };
+		553C1AF52B4DA07900C86355 /* Day19.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day19.hpp; sourceTree = "<group>"; };
+		553C1AF72B4DA07F00C86355 /* Day20.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day20.cpp; sourceTree = "<group>"; };
+		553C1AF82B4DA07F00C86355 /* Day20.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day20.hpp; sourceTree = "<group>"; };
+		553C1AFA2B4DA33C00C86355 /* Day21.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day21.cpp; sourceTree = "<group>"; };
+		553C1AFB2B4DA33C00C86355 /* Day21.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day21.hpp; sourceTree = "<group>"; };
+		553C1AFD2B4DA50800C86355 /* Day22.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day22.cpp; sourceTree = "<group>"; };
+		553C1AFE2B4DA50800C86355 /* Day22.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day22.hpp; sourceTree = "<group>"; };
+		553C1B002B4DA50E00C86355 /* Day23.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day23.cpp; sourceTree = "<group>"; };
+		553C1B012B4DA50E00C86355 /* Day23.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day23.hpp; sourceTree = "<group>"; };
+		553C1B032B4DA51600C86355 /* Day25.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day25.cpp; sourceTree = "<group>"; };
+		553C1B042B4DA51600C86355 /* Day25.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day25.hpp; sourceTree = "<group>"; };
 		55BEEAD12B4D6C7300E5F781 /* Day11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day11.cpp; sourceTree = "<group>"; };
 		55BEEAD22B4D6C7300E5F781 /* Day11.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day11.hpp; sourceTree = "<group>"; };
 		55BEEAD42B4D753800E5F781 /* Day12.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day12.cpp; sourceTree = "<group>"; };
@@ -149,8 +176,26 @@
 				55249FA72B4D80560056BB17 /* Day14.hpp */,
 				55249FA92B4D82830056BB17 /* Day15.cpp */,
 				55249FAA2B4D82830056BB17 /* Day15.hpp */,
+				553C1AEB2B4D9B1400C86355 /* Day16.cpp */,
+				553C1AEC2B4D9B1400C86355 /* Day16.hpp */,
+				553C1AEE2B4DA05900C86355 /* Day17.cpp */,
+				553C1AEF2B4DA05900C86355 /* Day17.hpp */,
+				553C1AF12B4DA07200C86355 /* Day18.cpp */,
+				553C1AF22B4DA07200C86355 /* Day18.hpp */,
+				553C1AF42B4DA07900C86355 /* Day19.cpp */,
+				553C1AF52B4DA07900C86355 /* Day19.hpp */,
+				553C1AF72B4DA07F00C86355 /* Day20.cpp */,
+				553C1AF82B4DA07F00C86355 /* Day20.hpp */,
+				553C1AFA2B4DA33C00C86355 /* Day21.cpp */,
+				553C1AFB2B4DA33C00C86355 /* Day21.hpp */,
+				553C1AFD2B4DA50800C86355 /* Day22.cpp */,
+				553C1AFE2B4DA50800C86355 /* Day22.hpp */,
+				553C1B002B4DA50E00C86355 /* Day23.cpp */,
+				553C1B012B4DA50E00C86355 /* Day23.hpp */,
 				55249FA02B4D77B20056BB17 /* Day24.cpp */,
 				55249FA12B4D77B20056BB17 /* Day24.hpp */,
+				553C1B032B4DA51600C86355 /* Day25.cpp */,
+				553C1B042B4DA51600C86355 /* Day25.hpp */,
 			);
 			path = 2023;
 			sourceTree = "<group>";
@@ -213,12 +258,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				553C1AF92B4DA07F00C86355 /* Day20.cpp in Sources */,
 				55249FAB2B4D82830056BB17 /* Day15.cpp in Sources */,
 				55D0DA4A2B4C679E00229CD2 /* main.cpp in Sources */,
+				553C1AFC2B4DA33C00C86355 /* Day21.cpp in Sources */,
 				55D0DA542B4C702900229CD2 /* Day01.cpp in Sources */,
 				55BEEAD32B4D6C7300E5F781 /* Day11.cpp in Sources */,
 				55D0DA582B4C705200229CD2 /* Day02.cpp in Sources */,
+				553C1AF32B4DA07200C86355 /* Day18.cpp in Sources */,
+				553C1AED2B4D9B1400C86355 /* Day16.cpp in Sources */,
 				55DE7E152B4D672C002AEC9C /* Day09.cpp in Sources */,
+				553C1B022B4DA50E00C86355 /* Day23.cpp in Sources */,
 				55249FA52B4D7F9E0056BB17 /* Day13.cpp in Sources */,
 				5533FF492B4C7ECD00B31363 /* Day04.cpp in Sources */,
 				55BEEAD62B4D753800E5F781 /* Day12.cpp in Sources */,
@@ -227,9 +277,13 @@
 				55DE7E122B4D65EE002AEC9C /* Day08.cpp in Sources */,
 				55D0DA602B4C796400229CD2 /* Day03.cpp in Sources */,
 				5533FF4C2B4CA1FC00B31363 /* Day05.cpp in Sources */,
+				553C1AF02B4DA05900C86355 /* Day17.cpp in Sources */,
+				553C1AF62B4DA07900C86355 /* Day19.cpp in Sources */,
+				553C1AFF2B4DA50800C86355 /* Day22.cpp in Sources */,
 				55249FA82B4D80560056BB17 /* Day14.cpp in Sources */,
 				55249FA22B4D77B20056BB17 /* Day24.cpp in Sources */,
 				55DE7E0F2B4D6376002AEC9C /* Day07.cpp in Sources */,
+				553C1B052B4DA51600C86355 /* Day25.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
