@@ -18,61 +18,57 @@
 #include <sstream>
 
 class Graph {
-private:
-	std::unordered_map<int, std::unordered_map<int, int>> G;
-	std::unordered_map<int, int> parent;
-
 public:
-	Graph(std::unordered_map<int, std::unordered_map<int, int>> G) {
-		this->G = G;
-		this->parent = {};
-		for (auto& n : this->G) {
-			this->parent[n.first] = -1;
+	std::map<std::string, std::map<std::string, int>> graph;
+	std::map<std::string, std::string> parent;
+	Graph(std::map<std::string, std::map<std::string, int>> graph) {
+		this->graph = graph;
+		for (auto& n : this->graph) {
+			this->parent[n.first] = "";
 		}
 	}
 
-	bool bfs(int s, int t) {
-		this->parent.clear();
-		for (auto& n : this->G) {
-			this->parent[n.first] = -1;
+	bool bfs(std::string source, std::string sink) {
+		for (auto& n : this->graph) {
+			this->parent[n.first] = "";
 		}
-		this->parent[s] = s;
-		std::queue<int> Q;
-		Q.push(s);
+		this->parent[source] = source;
+		std::queue<std::string> Q;
+		Q.push(source);
 		while (!Q.empty()) {
-			int n = Q.front();
+			std::string n = Q.front();
 			Q.pop();
-			for (auto& e : this->G[n]) {
+			for (auto& e : this->graph[n]) {
 				int c = e.second;
-				if (c > 0 && this->parent[e.first] == -1) {
+				if (c > 0 && this->parent[e.first] == "") {
 					this->parent[e.first] = n;
 					Q.push(e.first);
 				}
 			}
 		}
-		return this->parent[t] != -1;
+		return this->parent[sink] != "";
 	}
 
-	int minCut(int s, int t) {
-		for (auto& v : this->G) {
+	int minCut(std::string source, std::string sink) {
+		for (auto& v : this->graph) {
 			for (auto& k : v.second) {
-				this->G[v.first][k.first] = 1;
+				this->graph[v.first][k.first] = 1;
 			}
 		}
 		int maxFlow = 0;
-		while (this->bfs(s, t)) {
+		while (this->bfs(source, sink)) {
 			int flow = std::numeric_limits<int>::max();
-			int n = t;
-			while (n != s) {
-				flow = std::min(flow, this->G[this->parent[n]][n]);
+			std::string n = sink;
+			while (n != source) {
+				flow = std::min(flow, this->graph.at(this -> parent.at(n)).at(n));
 				n = this->parent[n];
 			}
 			maxFlow += flow;
-			int v = t;
-			while (v != s) {
-				int u = this->parent[v];
-				this->G[u][v] -= flow;
-				this->G[v][u] += flow;
+			std::string v = sink;
+			while (v != source) {
+				std::string u = this->parent[v];
+				this->graph[u][v] -= flow;
+				this->graph[v][u] += flow;
 				v = u;
 			}
 		}
@@ -82,22 +78,50 @@ public:
 	int solve() {
 		int g1 = 0;
 		for (auto& p : this->parent) {
-			if (p.second != -1) {
+			if (p.second != "") {
 				g1++;
 			}
 		}
-		return (this->G.size() - g1) * g1;
+		return (this->graph.size() - g1) * g1;
 	}
 };
 void day25(void){
 	std::ifstream input("input.txt");
 	std::string line;
-	std
+	std::map<std::string , std::map<std::string, int>> G;
 	while (getline(input,line)){
 		std::string node = line.substr(0, line.find(':'));
-		std::string connectingNodes = line.substr(line.find(':') + 1);
+		std::string connectingNodes = line.substr(line.find(':') + 2);
 		std::stringstream ss(connectingNodes);
-		while(get)
+		std::string connectingNode;
+		while(getline(ss, connectingNode, ' ')){
+			G[node][connectingNode] = 1;
+			G[connectingNode][node] = 1;
+		}
 	}
+//	for (auto x : G){
+//		std::cout << x.first << ": ";
+//		for (auto y : x.second){
+//			std::cout << y.first << "- " << y.second << ", ";
+//		}
+//		std::cout << std::endl;
+//	}
+	Graph g(G);
+	std::string source = "";
+	std::vector<std::string> others;
+	for (auto node : g.graph){
+		if (source == ""){
+			source = node.first;
+		}
+		else{
+			others.push_back(node.first);
+		}
+	}
+	for (std::string sink : others){
+		if (g.minCut(source, sink) == 3) break;
+	}
+	int ans = g.solve();
+	std::cout << "Part 1: " << ans << std::endl;
+	
 }
 
