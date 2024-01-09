@@ -8,7 +8,7 @@
 #include <algorithm>
 
 
-//take's a minute to run
+//takes a minute to run
 long long solve_part2(){
 	std::ifstream inputFile("input.txt");
 	std::string currentLine;
