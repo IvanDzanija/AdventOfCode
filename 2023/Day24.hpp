@@ -9,5 +9,5 @@
 #define Day24_hpp
 
 #include <stdio.h>
-
+void day24(void);
 #endif /* Day24_hpp */

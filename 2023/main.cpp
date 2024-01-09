@@ -17,15 +17,16 @@
 #include "Day09.hpp"
 #include "Day10.hpp"
 #include "Day11.hpp"
-//#include "Day12.hpp"
-//#include "Day13.hpp"
-//#include "Day14.hpp"
-//#include "Day15.hpp"
+#include "Day12.hpp"
+#include "Day13.hpp"
+#include "Day14.hpp"
+#include "Day15.hpp"
 //#include "Day16.hpp"
 //#include "Day17.hpp"
 //#include "Day18.hpp"
 //#include "Day19.hpp"
 //#include "Day20.hpp"
+#include "Day24.hpp"
 
 
 
@@ -40,8 +41,12 @@ int main(int argc, const char * argv[]) {
     //day8();
     //day9();
     //day10();
-    day11();
-    
+    //day11();
+	//day12();
+	//day13();
+	//day14();
+	day15();
+	//day24();
     
     return 0;
 }

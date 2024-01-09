@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55249FA22B4D77B20056BB17 /* Day24.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55249FA02B4D77B20056BB17 /* Day24.cpp */; };
+		55249FA52B4D7F9E0056BB17 /* Day13.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55249FA32B4D7F9E0056BB17 /* Day13.cpp */; };
+		55249FA82B4D80560056BB17 /* Day14.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55249FA62B4D80560056BB17 /* Day14.cpp */; };
+		55249FAB2B4D82830056BB17 /* Day15.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55249FA92B4D82830056BB17 /* Day15.cpp */; };
 		5533FF492B4C7ECD00B31363 /* Day04.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5533FF472B4C7ECD00B31363 /* Day04.cpp */; };
 		5533FF4C2B4CA1FC00B31363 /* Day05.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5533FF4A2B4CA1FC00B31363 /* Day05.cpp */; };
 		5533FF4F2B4CA94900B31363 /* Day06.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5533FF4D2B4CA94900B31363 /* Day06.cpp */; };
 		55BEEAD32B4D6C7300E5F781 /* Day11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55BEEAD12B4D6C7300E5F781 /* Day11.cpp */; };
+		55BEEAD62B4D753800E5F781 /* Day12.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55BEEAD42B4D753800E5F781 /* Day12.cpp */; };
 		55D0DA4A2B4C679E00229CD2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55D0DA492B4C679E00229CD2 /* main.cpp */; };
 		55D0DA542B4C702900229CD2 /* Day01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55D0DA532B4C702900229CD2 /* Day01.cpp */; };
 		55D0DA582B4C705200229CD2 /* Day02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55D0DA562B4C705200229CD2 /* Day02.cpp */; };
@@ -45,6 +50,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		55249FA02B4D77B20056BB17 /* Day24.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day24.cpp; sourceTree = "<group>"; };
+		55249FA12B4D77B20056BB17 /* Day24.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day24.hpp; sourceTree = "<group>"; };
+		55249FA32B4D7F9E0056BB17 /* Day13.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day13.cpp; sourceTree = "<group>"; };
+		55249FA42B4D7F9E0056BB17 /* Day13.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day13.hpp; sourceTree = "<group>"; };
+		55249FA62B4D80560056BB17 /* Day14.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day14.cpp; sourceTree = "<group>"; };
+		55249FA72B4D80560056BB17 /* Day14.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day14.hpp; sourceTree = "<group>"; };
+		55249FA92B4D82830056BB17 /* Day15.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day15.cpp; sourceTree = "<group>"; };
+		55249FAA2B4D82830056BB17 /* Day15.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day15.hpp; sourceTree = "<group>"; };
 		5533FF472B4C7ECD00B31363 /* Day04.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day04.cpp; sourceTree = "<group>"; };
 		5533FF482B4C7ECD00B31363 /* Day04.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day04.hpp; sourceTree = "<group>"; };
 		5533FF4A2B4CA1FC00B31363 /* Day05.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day05.cpp; sourceTree = "<group>"; };
@@ -53,6 +66,8 @@
 		5533FF4E2B4CA94900B31363 /* Day06.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day06.hpp; sourceTree = "<group>"; };
 		55BEEAD12B4D6C7300E5F781 /* Day11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day11.cpp; sourceTree = "<group>"; };
 		55BEEAD22B4D6C7300E5F781 /* Day11.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day11.hpp; sourceTree = "<group>"; };
+		55BEEAD42B4D753800E5F781 /* Day12.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Day12.cpp; sourceTree = "<group>"; };
+		55BEEAD52B4D753800E5F781 /* Day12.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Day12.hpp; sourceTree = "<group>"; };
 		55D0DA462B4C679E00229CD2 /* 2023 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2023; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D0DA492B4C679E00229CD2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		55D0DA532B4C702900229CD2 /* Day01.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Day01.cpp; sourceTree = "<group>"; };
@@ -126,6 +141,16 @@
 				55DE7E172B4D67BF002AEC9C /* Day10.hpp */,
 				55BEEAD12B4D6C7300E5F781 /* Day11.cpp */,
 				55BEEAD22B4D6C7300E5F781 /* Day11.hpp */,
+				55BEEAD42B4D753800E5F781 /* Day12.cpp */,
+				55BEEAD52B4D753800E5F781 /* Day12.hpp */,
+				55249FA32B4D7F9E0056BB17 /* Day13.cpp */,
+				55249FA42B4D7F9E0056BB17 /* Day13.hpp */,
+				55249FA62B4D80560056BB17 /* Day14.cpp */,
+				55249FA72B4D80560056BB17 /* Day14.hpp */,
+				55249FA92B4D82830056BB17 /* Day15.cpp */,
+				55249FAA2B4D82830056BB17 /* Day15.hpp */,
+				55249FA02B4D77B20056BB17 /* Day24.cpp */,
+				55249FA12B4D77B20056BB17 /* Day24.hpp */,
 			);
 			path = 2023;
 			sourceTree = "<group>";
@@ -188,17 +213,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55249FAB2B4D82830056BB17 /* Day15.cpp in Sources */,
 				55D0DA4A2B4C679E00229CD2 /* main.cpp in Sources */,
 				55D0DA542B4C702900229CD2 /* Day01.cpp in Sources */,
 				55BEEAD32B4D6C7300E5F781 /* Day11.cpp in Sources */,
 				55D0DA582B4C705200229CD2 /* Day02.cpp in Sources */,
 				55DE7E152B4D672C002AEC9C /* Day09.cpp in Sources */,
+				55249FA52B4D7F9E0056BB17 /* Day13.cpp in Sources */,
 				5533FF492B4C7ECD00B31363 /* Day04.cpp in Sources */,
+				55BEEAD62B4D753800E5F781 /* Day12.cpp in Sources */,
 				5533FF4F2B4CA94900B31363 /* Day06.cpp in Sources */,
 				55DE7E182B4D67BF002AEC9C /* Day10.cpp in Sources */,
 				55DE7E122B4D65EE002AEC9C /* Day08.cpp in Sources */,
 				55D0DA602B4C796400229CD2 /* Day03.cpp in Sources */,
 				5533FF4C2B4CA1FC00B31363 /* Day05.cpp in Sources */,
+				55249FA82B4D80560056BB17 /* Day14.cpp in Sources */,
+				55249FA22B4D77B20056BB17 /* Day24.cpp in Sources */,
 				55DE7E0F2B4D6376002AEC9C /* Day07.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -333,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

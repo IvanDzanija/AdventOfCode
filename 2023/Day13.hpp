@@ -9,5 +9,6 @@
 #define Day13_hpp
 
 #include <stdio.h>
+void day13(void);
 
 #endif /* Day13_hpp */
