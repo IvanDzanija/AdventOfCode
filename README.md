@@ -1,3 +1,3 @@
 # AdventOfCode
- My solutions for annual Advent of Code event.
+## My solutions for annual Advent of Code event.
 ------------------------------------------------------
